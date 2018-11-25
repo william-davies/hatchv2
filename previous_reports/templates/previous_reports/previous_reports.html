@@ -1,0 +1,113 @@
+{% extends 'previous_reports/base/base_content.html' %}
+{% load static %}
+
+{% block style %}
+.previous-report-card {
+margin-bottom: 20px;
+}
+{% endblock %}
+
+{% block content %}
+    <div class="container" style="margin-top: 70px">
+        <div class="row">
+            <div class="col">
+                <h5 style="text-align: center">Here is a list of your previous reports. Tap a report to view more details</h5>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row previous-report-card" data-toggle="modal" data-target="#modal1">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-9 pr-0">
+                                <b>Hacker infestation at MoJ</b>
+                            </div>
+                            <div class="col-3 text-right pl-0">
+                                <span>Nov 24</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span>Many Franco Manca pizzas ordered.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row previous-report-card">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-9 pr-0">
+                                <b>Robbery in Soho</b>
+                            </div>
+                            <div class="col-3 text-right pl-0">
+                                <span>Nov 20</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span>Criminal identified and manhunt conducted.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row previous-report-card">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-9 pr-0">
+                                <b>Assault in Bloomsbury</b>
+                            </div>
+                            <div class="col-3 text-right pl-0">
+                                <span>Mar 16</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span>Criminal proven guilt in court and jailed.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal1Label">Hacker infestation at MoJ</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <b>Nov 24</b>
+                                    <p>16:11 Criminal tried and proven guilty</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <b>Nov 21</b>
+                                    <p>21:28 Criminal apprehended</p>
+                                    <p>19:18 Police dispatched</p>
+                                    <p>18:59 Report submitted and received</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+{% endblock %}
