@@ -1,0 +1,48 @@
+{% extends 'nearby_crimes/base/base_content.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container" style="margin-bottom: 70px">
+        <div class="row" style="margin-top: 70px">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col">
+                                <b>Assault in Soho at 12:45</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <span>Group of young men on mopeds assaulted a pedestrian and then escaped on mopeds.</span>
+                                <br>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <b>Picture</b>
+                                <img width="300px" height="150px" src="{% static "nearby_crimes/images/crime.png" %}">
+                            </div>
+                        </div>
+                        <div class="row" style="padding-top: 20px">
+                            <div class="col">
+                                <b>Map</b>
+                                <img width="300px" height="200px" src="{% static "nearby_crimes/images/map.png" %}">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <b>Please stay away.</b>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+{% endblock %}

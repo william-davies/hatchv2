@@ -1,3 +1,87 @@
 {% extends 'report/base/base_content.html' %}
 {% load static %}
 
+{% block style %}
+    <style>
+
+
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class = "container" style="margin-top: 70px">
+        <div class="row">
+            <div class="col">
+                <h3>Reporting robbery at {% now "H:i" %} at 5 Petty France</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button class="btn btn-light" style="margin:auto;">Upload image</button>
+            </div>
+            <div class="col text-center">
+                <button class="btn btn-light">Upload video</button>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 30px">
+            <div class="col">
+                <button class="btn btn-success btn-block" data-toggle="modal" data-target="#modal1">Submit</button>
+            </div>
+        </div>
+
+        <div class="row text-center" style="padding-top: 20px">
+            <div class="col">
+                <h3>OR</h3>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 20px">
+            <div class="col">
+                <button class="btn btn-primary w-100">Live Chat      <i class="fas fa-comments"></i></button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary w-100">Call      <i class="fas fa-phone"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal1Label">Report submitted!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <p>You report has been succesfully received by police HQ. Officers are on their way.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+{% block javascript %}
+    {{ block.super }}
+    <script type="text/javascript">
+
+    </script>
+
+{% endblock %}
+

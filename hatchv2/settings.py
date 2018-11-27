@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'nearby_crimes.apps.NearbyCrimesConfig',
     'previous_reports.apps.PreviousReportsConfig',
     'dashboard.apps.DashboardConfig',
     'report.apps.ReportConfig',
